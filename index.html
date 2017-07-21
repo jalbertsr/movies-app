@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="angularMovies">
+<head>
+	<title>Movies App</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>{{4+2}}</p>	
+	<ng-view></ng-view>
+
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script> 
+
+	<!-- MAIN MODULE -->
+    <script type="text/javascript" src="app.js"></script>
+
+     <!-- SERVICES -->
+
+    <script type="text/javascript" src="js/services/dataService.js"></script>
+
+    <!-- ROUTE / -->
+    <script type="text/javascript" src="js/routes/nowPlaying/controller.js"></script>
+    <script type="text/javascript" src="js/routes/nowPlaying/index.js"></script>
+
+    <!--  ROUTE /contact --> 
+ <!--    <script type="text/javascript" src="js/routes/popular/controller.js"></script>
+    <script type="text/javascript" src="js/routes/popular/index.js"></script>
+ -->
+    <!-- ROUTE /blog -->
+<!--     <script type="text/javascript" src="js/routes/topRated/controller.js"></script>
+    <script type="text/javascript" src="js/routes/topRated/index.js"></script> -->
+
+    <!-- ROUTE /detailsPost -->
+<!--     <script type="text/javascript" src="js/routes/upcoming/controller.js"></script>
+    <script type="text/javascript" src="js/routes/upcoming/index.js"></script>  -->
+</body>
+</html>
