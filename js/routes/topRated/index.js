@@ -1,8 +1,8 @@
 angular.module('angularMovies')
 .config(function($routeProvider){
 	$routeProvider
-	.when('topRated',{
+	.when('/topRated',{
 		templateUrl : 'js/routes/topRated/template.html',
-		controller : 'topRated/controller'
+		controller : 'topRatedController'
 	})
 })

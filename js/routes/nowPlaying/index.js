@@ -1,7 +1,7 @@
 angular.module('angularMovies')
 .config(function($routeProvider){
 	$routeProvider
-	.when('/',{
+	.when('/nowPlaying',{
 		templateUrl : 'js/routes/nowPlaying/template.html',
 		controller : 'nowPlayingController'
 	})

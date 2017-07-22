@@ -1,8 +1,9 @@
 angular.module('angularMovies')
     .controller('nowPlayingController', function($scope, dataService) {
     	
-        dataService.getFilms()
+        dataService.getNowPlaying()
             .then( function(response) {
                 console.log(response)
+                $scope.films = response.data.results
             })
     })

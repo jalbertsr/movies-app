@@ -1,8 +1,8 @@
 angular.module('angularMovies')
 .config(function($routeProvider){
 	$routeProvider
-	.when('popular',{
+	.when('/popular',{
 		templateUrl : 'js/routes/popular/template.html',
-		controller : 'popular/controller'
+		controller : 'popularController'
 	})
 })
