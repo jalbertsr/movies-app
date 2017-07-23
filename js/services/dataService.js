@@ -21,24 +21,30 @@ angular.module('angularMovies')
           var url = 'https://api.themoviedb.org/3/movie/upcoming?api_key=' + apiKey
           return $http.get(url)
         }
-
-        function getLatest () {
-          var url = 'https://api.themoviedb.org/3/movie/latest?api_key=' + apiKey
-          return $http.get(url)
-        }
-
+        
         function getFilms (query) {
           console.log(query)
           var url = 'https://api.themoviedb.org/3/search/movie?api_key=' + apiKey +'&query='+ query
           return $http.get(url)
         }
 
+        // function getLatest () {
+        //   var url = 'https://api.themoviedb.org/3/movie/latest?api_key=' + apiKey
+        //   return $http.get(url)
+        // }
+
+        // function getVideo (idVideo) {
+        //   var url = 'https://api.themoviedb.org/3/movie/'+ idVideo +'/videos?api_key=' + apiKey
+        //   return $http.get(url)
+        // }
+
         return {
           getPopular: getPopular,
           getNowPlaying: getNowPlaying,
           getTopRated: getTopRated,
           getUpcoming: getUpcoming,
-          getLatest: getLatest,
+          // getLatest: getLatest,
           getFilms: getFilms
+          // getVideo: getVideo
         }
     })

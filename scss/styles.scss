@@ -1,0 +1,76 @@
+.thumbnail{
+	height: 480px;
+	img{
+	  max-width: 250px;
+	  max-height: 360px;
+	  min-width: 200px;
+	  max-width: 310px;
+	}
+	h3{
+	  text-align: center;
+	}
+}
+
+.title{
+	margin-bottom: 45px;
+	color: white;
+	font-family: 'Anton', sans-serif;
+	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+.home{
+	background-image: url(../img/wallpaper.jpg)
+}
+
+/*----------------------------- footer ---------------------------------*/
+
+@font-face {
+   font-family: "ATC Overlook";
+   src: url('../fonts/ATCOverlook-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+ }
+
+
+footer {
+    min-width: 280px;
+    background-color: #333333;
+    color: #fff;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer .wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer p {
+    padding: 18px 0;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "ATC Overlook", sans-serif;
+}
+
+footer a {
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+    transition: all ease-in-out .15s;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    top: -4px;
+    color: #0791d0;
+    text-decoration: none;
+}
+
+footer .footer-icon {
+    color: #ca2027;
+}
